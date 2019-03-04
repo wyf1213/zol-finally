@@ -1,0 +1,1 @@
+"use strict";define(function(n,c,i){i.exports={back:function(){$(".sidebar .sidebar_back").on("click",function(){return $("body,html").animate({scrollTop:0},300),!1})}}});

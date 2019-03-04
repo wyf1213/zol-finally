@@ -1,0 +1,1 @@
+"use strict";define(function(t,e,a){a.exports={getNum:function(){var t=sessionStorage.getItem("login");if(null!=t){var e=JSON.parse(t).uid;$.ajax({url:"./../server/cartList.php",type:"post",dataType:"json",data:{uId:e}}).then(function(t){var e=t.cartnum;$(".cartnum").text(e)})}else{var a=JSON.parse($.cookie("cartInfo")||"[]").length;$(".cartnum").text(a)}}}});
